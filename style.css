@@ -1,0 +1,98 @@
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--Dark-cyan);
+  background-image: url(images/bg-pattern-bottom.svg);
+  background-size: cover;
+  background-position: 500px 450px;
+  background-image: url(images/bg-pattern-top.svg);
+}
+
+.container {
+  width: 500px;
+  background-color: white;
+  padding: 30px;
+  margin: auto;
+  border-radius: 20px;
+  background-image: url(images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 182px;
+  text-align: center;
+}
+
+.container .image {
+  width: 140px;
+  background-color: white;
+  height: 140px;
+  border-radius: 50%;
+  background-image: url(images/image-victor.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  background-size: cover;
+  border: 10px solid white;
+  margin: 80px auto 0;
+}
+
+.container .text {
+  margin: 20px auto;
+}
+.container .text .vic {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  width: 170px;
+}
+.container .text h2 {
+  margin-right: 10px;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.container .text p {
+  font-size: 18px;
+  color: var(--Dark-gray);
+}
+
+.container .num {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.container .num .col h1 {
+  color: var(--Very-dark-desaturated-blue);
+}
+.container .num .col p {
+  color: var(--Dark-gray);
+}
+
+@media (max-width: 778px) {
+  .container .image {
+    width: 110;
+    height: 110;
+  }
+  .container .num .col h1 {
+    font-size: 23px;
+  }
+  .container {
+    margin: auto 20px;
+  }
+}
