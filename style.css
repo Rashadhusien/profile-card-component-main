@@ -35,6 +35,7 @@ body {
   background-position: top center;
   background-size: 100% 182px;
   text-align: center;
+  overflow: hidden;
 }
 
 .container .image {
@@ -66,7 +67,7 @@ body {
 }
 
 .container .text p {
-  font-size: 18px;
+  font-size: 19px;
   color: var(--Dark-gray);
 }
 
@@ -82,6 +83,12 @@ body {
 }
 .container .num .col p {
   color: var(--Dark-gray);
+}
+
+hr {
+  margin-left: -30px;
+  width: 200%;
+  background-color: rgba(0, 0, 0, 0.263);
 }
 
 @media (max-width: 778px) {
